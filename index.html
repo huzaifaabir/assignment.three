@@ -18,7 +18,11 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'first-color':'#ABEF5F',// logo color
+                        'second-color':'#737373',// paraghraph color
+                        'third-color':'#ABEF5F80', // btn color
+                        'fourth-color':'##E9E9E9', // bg gradient color
+                        'bg-color':'#E1E1E1', // bg gradient color
                     }
                 }
             }
@@ -32,7 +36,7 @@
 </head>
 
 <body class="manrope">
-    <header class="bg-gradient-to-b from-neutral-200 to-white">
+    <header class="bg-gradient-to-b from-bg-color to-white">
         <!-- navbar start -->
         <nav>
             <div class="container mx-auto py-9">
@@ -40,7 +44,7 @@
                     <div class="nav flex justify-between mx-auto items-center">
                         <div class="logo text-left">
                             <a class="flex items-center gap-2" href="index.html">
-                                <i class="fa-solid fa-arrow-right bg-lime-300 p-2 w-8 h-8 rotate-[-45deg] rounded-full">
+                                <i class="fa-solid fa-arrow-right bg-first-color p-2 w-8 h-8 rotate-[-45deg] rounded-full">
                                 </i>
                                 <span class="font-extrabold text-3xl">Rinterio</span>
                             </a>
@@ -49,13 +53,13 @@
                             <ul class="flex gap-9 px-1">
                                 <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out text-neutral-800"
                                         href="#">Home</a></li>
-                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                <li><a class="text-4 text-second-color hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
                                         href="#">Services</a></li>
-                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                <li><a class="text-4 text-second-color hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
                                         href="#">Portfolio</a></li>
-                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                <li><a class="text-4 text-second-color hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
                                         href="#">Blogs</a></li>
-                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                <li><a class="text-4 text-second-color hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
                                         href="#">Contact Us</a></li>
                             </ul>
                         </div>
@@ -63,32 +67,32 @@
                             <div class="item hidden md:flex gap-2 items-center">
                                 <a href="#">
                                     <i
-                                        class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full border-2 border-neutral-200 text-neutral-500"></i></a>
+                                        class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full border-2 border-fourth-color text-second-color"></i></a>
                                 <a href="#">
                                     <i
-                                        class="fa-solid fa-cart-shopping p-2 bg-white rounded-full border-2 border-neutral-200 text-neutral-500"></i>
+                                        class="fa-solid fa-cart-shopping p-2 bg-white rounded-full border-2 border-fourth-color text-second-color"></i>
                                 </a>
-                                <a href="#" class="btn bg-lime-300  rounded-3xl px-6">
+                                <a href="#" class="btn bg-first-color  rounded-3xl px-6">
                                     <span class="font-extrabold">Book Consult</span>
                                     <i
                                         class="fa-solid fa-arrow-right bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i></a>
                             </div>
                             <div class="dropdown lg:hidden relative ml-2">
                                 <div tabindex="0" role="button"
-                                    class="btn bg-white border-2 border-neutral-200 rounded-full lg:hidden">
+                                    class="btn bg-white border-2 text-second-color rounded-full lg:hidden">
                                     <i class="fa-solid fa-bars"></i>
                                 </div>
                                 <ul tabindex="0"
                                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
                                     <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out text-neutral-800"
                                             href="#">Home</a></li>
-                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color"
                                             href="#">Services</a></li>
-                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color"
                                             href="#">Portfolio</a></li>
-                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color"
                                             href="#">Blogs</a></li>
-                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color"
                                             href="#">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -109,13 +113,13 @@
                     <div class="description md:w-10/12 mx-auto flex flex-col justify-center">
                         <h1 class="text-center text-2xl md:text-4xl lg:text-6xl font-black mb-5">A barn house of this
                             design has a striking appearance</h1>
-                        <p class="text-neutral-500 text-3 md:text-4 text-center">The barn house captivates with its
+                        <p class="text-second-color text-3 md:text-4 text-center">The barn house captivates with its
                             blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
                             accents, and large windows that flood the space with natural light.</p>
-                        <div class="btn w-full md:w-52 bg-lime-100 border-lime-200 border-2 mx-auto mt-8 rounded-full">
+                        <div class="btn w-full md:w-52 bg-third-color border-first-color border-2 mx-auto mt-8 rounded-full">
                             <a class="flex items-center gap-2" href="#">
                                 <span class="text-xl">View Details</span>
-                                <i class="fa-solid fa-arrow-right bg-lime-300 p-2 w-8 h-8 rotate-[-45deg] rounded-full">
+                                <i class="fa-solid fa-arrow-right bg-first-color p-2 w-8 h-8 rotate-[-45deg] rounded-full">
                                 </i>
                             </a>
 
@@ -126,7 +130,9 @@
         </div>
         <!-- hero end -->
     </header>
-    <main></main>
+    <main>
+        <h1 class="bg-custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae obcaecati incidunt necessitatibus magnam nisi suscipit saepe inventore, aliquid, neque nihil sapiente praesentium laborum quod adipisci rerum accusantium! Aliquid, error.</h1>
+    </main>
     <footer></footer>
 </body>
 
