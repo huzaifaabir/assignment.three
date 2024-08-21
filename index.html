@@ -1,11 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment Three</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo labore ad sit vero quam possimus nostrum et molestias accusamus, debitis magni quas, ipsam cum nulla totam tempora, id error.</h1>
+
+<body class="manrope">
+    <header class="bg-gradient-to-b from-neutral-200 to-white">
+        <!-- navbar start -->
+        <nav>
+            <div class="container mx-auto py-9">
+                <div class="all-content mx-3">
+                    <div class="nav flex justify-between mx-auto items-center">
+                        <div class="logo text-left">
+                            <a class="flex items-center gap-2" href="index.html">
+                                <i class="fa-solid fa-arrow-right bg-lime-300 p-2 w-8 h-8 rotate-[-45deg] rounded-full">
+                                </i>
+                                <span class="font-extrabold text-3xl">Rinterio</span>
+                            </a>
+                        </div>
+                        <div class="nav-menu hidden lg:flex">
+                            <ul class="flex gap-9 px-1">
+                                <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out text-neutral-800"
+                                        href="#">Home</a></li>
+                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                        href="#">Services</a></li>
+                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                        href="#">Portfolio</a></li>
+                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                        href="#">Blogs</a></li>
+                                <li><a class="text-4 text-neutral-500 hover:font-bold transition duration-300 ease-in-out hover:text-neutral-800"
+                                        href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-icon flex">
+                            <div class="item hidden md:flex gap-2 items-center">
+                                <a href="#">
+                                    <i
+                                        class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full border-2 border-neutral-200 text-neutral-500"></i></a>
+                                <a href="#">
+                                    <i
+                                        class="fa-solid fa-cart-shopping p-2 bg-white rounded-full border-2 border-neutral-200 text-neutral-500"></i>
+                                </a>
+                                <a href="#" class="btn bg-lime-300  rounded-3xl px-6">
+                                    <span class="font-extrabold">Book Consult</span>
+                                    <i
+                                        class="fa-solid fa-arrow-right bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i></a>
+                            </div>
+                            <div class="dropdown lg:hidden relative ml-2">
+                                <div tabindex="0" role="button"
+                                    class="btn bg-white border-2 border-neutral-200 rounded-full lg:hidden">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                                    <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out text-neutral-800"
+                                            href="#">Home</a></li>
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                            href="#">Services</a></li>
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                            href="#">Portfolio</a></li>
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                            href="#">Blogs</a></li>
+                                    <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-neutral-500"
+                                            href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <!-- hero start -->
+        <div class="hero-section mb-14">
+            <div class="container mx-auto">
+                <div class="all-content mx-3">
+                    <div class="image">
+                        <img class="mx-auto mb-5" src="assets/banner.png" alt="">
+                    </div>
+                    <div class="description md:w-10/12 mx-auto flex flex-col justify-center">
+                        <h1 class="text-center text-2xl md:text-4xl lg:text-6xl font-black mb-5">A barn house of this
+                            design has a striking appearance</h1>
+                        <p class="text-neutral-500 text-3 md:text-4 text-center">The barn house captivates with its
+                            blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
+                            accents, and large windows that flood the space with natural light.</p>
+                        <div class="btn w-full md:w-52 bg-lime-100 border-lime-200 border-2 mx-auto mt-8 rounded-full">
+                            <a class="flex items-center gap-2" href="#">
+                                <span class="text-xl">View Details</span>
+                                <i class="fa-solid fa-arrow-right bg-lime-300 p-2 w-8 h-8 rotate-[-45deg] rounded-full">
+                                </i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero end -->
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
