@@ -18,11 +18,11 @@
             theme: {
                 extend: {
                     colors: {
-                        'first-color':'#ABEF5F',// logo color
-                        'second-color':'#737373',// paraghraph color
-                        'third-color':'#ABEF5F80', // btn color
-                        'fourth-color':'##E9E9E9', // bg gradient color
-                        'bg-color':'#E1E1E1', // bg gradient color
+                        'first-color': '#ABEF5F',// logo color
+                        'second-color': '#737373',// paraghraph color
+                        'third-color': '#ABEF5F80', // btn color
+                        'fourth-color': '##E9E9E9', // border color
+                        'background-color': '#E1E1E1', // bg gradient color
                     }
                 }
             }
@@ -44,7 +44,8 @@
                     <div class="nav flex justify-between mx-auto items-center">
                         <div class="logo text-left">
                             <a class="flex items-center gap-2" href="index.html">
-                                <i class="fa-solid fa-arrow-right bg-first-color p-2 w-8 h-8 rotate-[-45deg] rounded-full">
+                                <i
+                                    class="fa-solid fa-arrow-right bg-first-color p-2 w-8 h-8 rotate-[-45deg] rounded-full">
                                 </i>
                                 <span class="font-extrabold text-3xl">Rinterio</span>
                             </a>
@@ -67,10 +68,10 @@
                             <div class="item hidden md:flex gap-2 items-center">
                                 <a href="#">
                                     <i
-                                        class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full border-2 border-fourth-color text-second-color"></i></a>
+                                        class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full border-2 border-fourth-color text-second-color hover:bg-neutral-300"></i></a>
                                 <a href="#">
                                     <i
-                                        class="fa-solid fa-cart-shopping p-2 bg-white rounded-full border-2 border-fourth-color text-second-color"></i>
+                                        class="fa-solid fa-cart-shopping p-2 bg-white rounded-full border-2 border-fourth-color text-second-color hover:bg-neutral-300"></i>
                                 </a>
                                 <a href="#" class="btn bg-first-color  rounded-3xl px-6">
                                     <span class="font-extrabold">Book Consult</span>
@@ -104,7 +105,7 @@
         </nav>
         <!-- navbar end -->
         <!-- hero start -->
-        <div class="hero-section mb-14">
+        <div class="hero-section pb-20">
             <div class="container mx-auto">
                 <div class="all-content mx-3">
                     <div class="image">
@@ -116,10 +117,12 @@
                         <p class="text-second-color text-3 md:text-4 text-center">The barn house captivates with its
                             blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
                             accents, and large windows that flood the space with natural light.</p>
-                        <div class="btn w-full md:w-52 bg-third-color border-first-color border-2 mx-auto mt-8 rounded-full">
+                        <div
+                            class="btn w-full md:w-52 bg-third-color border-first-color border-2 mx-auto mt-8 rounded-full">
                             <a class="flex items-center gap-2" href="#">
                                 <span class="text-xl">View Details</span>
-                                <i class="fa-solid fa-arrow-right bg-first-color p-2 w-8 h-8 rotate-[-45deg] rounded-full">
+                                <i
+                                    class="fa-solid fa-arrow-right bg-first-color p-2 w-8 h-8 rotate-[-45deg] rounded-full">
                                 </i>
                             </a>
 
@@ -131,7 +134,58 @@
         <!-- hero end -->
     </header>
     <main>
-        <h1 class="bg-custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae obcaecati incidunt necessitatibus magnam nisi suscipit saepe inventore, aliquid, neque nihil sapiente praesentium laborum quod adipisci rerum accusantium! Aliquid, error.</h1>
+        <!-- about us start  -->
+        <section id="about-us" class="about-us py-20 bg-background-color">
+            <div class="container mx-auto">
+                <div class="main-content lg:flex items-center justify-center gap-8 relative mx-3">
+                    <div class="about flex-1 flex justify-between items-center flex-col mb-6 lg:block">
+                        <img class="hidden lg:block absolute top-[-50px] left-[-60px] " src="assets/Vector.png" alt="">
+
+                        <div class="btn mb-6 rounded-full">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a class="text-4 font-semibold" href="#">About us</a>
+                        </div>
+                        <!-- button -->
+
+                        <div class="title mb-8">
+                            <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-6 text-center lg:text-left">We
+                                design thoughtful, liveable spaces</h1>
+                            <p class="text-second-color text-4 font-medium text-center lg:text-left">The barn house
+                                captivates with its blend of rustic charm and
+                                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        </div>
+                        <!-- about title  -->
+                        <div class="card-item md:flex lg:block gap-6">
+                            <div class="card-1 p-6 bg-white rounded-xl flex items-center justify-center gap-6 mb-6 h-32">
+                                <img src="assets/commercial.png" alt="">
+                                <div class="text">
+                                    <h1 class="text-4 md:text-xl font-bold">Commercial</h1>
+                                    <p class="text-4 mb-2 text-second-color">The barn house captivates with its blend of
+                                        rustic charm and modern.</p>
+                                </div>
+                            </div>
+                            <div class="card-2 p-7 bg-white rounded-xl flex items-center justify-center gap-6 h-32">
+                                <img src="assets/residential.png" alt="">
+                                <div class="text">
+                                    <h1 class="text-4 md:text-xl font-bold">Commercial</h1>
+                                    <p class="text-4 mb-2 text-second-color">The barn house captivates with its blend of
+                                        rustic charm and modern.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- about image  -->
+                    <div class="image-content flex-1 w-full">
+                        <img class="w-full h-auto" src="assets/Rectangle.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <!-- about us end  -->
+     <!-- optional section start -->
+     <!-- optional section end -->
     </main>
     <footer></footer>
 </body>
